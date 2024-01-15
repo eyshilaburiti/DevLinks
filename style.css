@@ -8,6 +8,11 @@ body {
   background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
 }
 
+body * {
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+}
+
 #container {
   width: 360px;
   height: 712px;
@@ -32,4 +37,10 @@ body {
    * - Por padrão a imagem é display inline. 
    * - Portanto, para aplicar a propriedade "margin", foi necessário configurar sua visualização como block.
    */
+}
+
+#profile p {
+  font-weight: 500; /* Peso da fonte */
+  font-size: 16px; /* Tamanho da fonte */
+  line-height: 24px; /* Altura da linha */
 }
