@@ -1,3 +1,12 @@
+* {
+  /* Seletor universal (todos os elementos)
+   * resetar os padrões de margem gerados automaticamente pelo navegador.
+   */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* A medida do tamanho da caixa passar a ser considerada a partir da borda. */
+}
+
 body {
   /* Agrupando background [shorthand - atalho para todas as outras propriedades]
    * - color
