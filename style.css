@@ -26,11 +26,18 @@ body * {
   width: 360px;
   height: 712px;
   border: 1px solid red;
-  margin: auto;
+  /*
+  margin-top: 56px;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  */
+  margin: 56px auto 0px auto;
 }
 
 #profile {
   text-align: center;
+  padding: 24px; /* Preenchimento */
 
   /* Centralizando perfil
    * O pai (#profile) do elemento inline (<img>) permite alinhar os elementos.
@@ -52,4 +59,5 @@ body * {
   font-weight: 500; /* Peso da fonte */
   font-size: 16px; /* Tamanho da fonte */
   line-height: 24px; /* Altura da linha */
+  margin-top: 8px;
 }
