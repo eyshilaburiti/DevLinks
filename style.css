@@ -14,3 +14,22 @@ body {
   border: 1px solid red;
   margin: auto;
 }
+
+#profile {
+  text-align: center;
+
+  /* Centralizando perfil
+   * O pai (#profile) do elemento inline (<img>) permite alinhar os elementos.
+   */
+}
+
+#profile img {
+  width: 112px;
+
+  /* Display
+   * display: block;
+   * margin: auto;
+   * - Por padrão a imagem é display inline. 
+   * - Portanto, para aplicar a propriedade "margin", foi necessário configurar sua visualização como block.
+   */
+}
