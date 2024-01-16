@@ -104,10 +104,15 @@ body * {
 
   /* Posicionamento */
   position: absolute;
+  left: 0;
   z-index: 1; /* Botão acima do track*/
-  right: 0;
   top: 50%;
   transform: translateY(-50%); /* Movendo o botão */
+}
+
+.light #switch button {
+  left: initial; /* Posição inicial*/
+  right: 0;
 }
 
 #switch span {
