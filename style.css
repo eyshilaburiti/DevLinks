@@ -61,3 +61,26 @@ body * {
   line-height: 24px; /* Altura da linha */
   margin-top: 8px;
 }
+
+/* Links */
+ul {
+  list-style: none;
+}
+
+ul li a {
+  border: 1px solid #ccc;
+  display: flex; /* Cria um linha virtual e central em cada elemento (main, eixo principal) */
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+
+  /* Display flex
+   * justify-content: center;
+   * - Faz com que os elementos da caixa ul ficam um do lado do outro.
+   * - Os li's ficam um ao lado do outro de maneira flexível.
+   */
+
+  /* Display block
+   * text-align: center;
+   */
+}
