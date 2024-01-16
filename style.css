@@ -110,11 +110,16 @@ body * {
   z-index: 1; /* Botão acima do track*/
   top: 50%;
   transform: translateY(-50%); /* Movendo o botão */
+
+  animation: slide-out 0.2s;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 
 .light #switch button {
-  left: initial; /* Posição inicial*/
-  right: 0;
+  animation: slide-in 0.4s forwards; /* Continuar de onde parou */
 }
 
 #switch span {
@@ -218,5 +223,27 @@ footer span {
 
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+/* Animation */
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+
+  /* Animação
+  Leva o left de 0 para 50% em 0.4s. */
+}
+
+@keyframes slide-out {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
