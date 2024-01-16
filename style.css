@@ -18,6 +18,7 @@
   --surface-color: rgba(255, 255, 255, 0.1); /* background */
   --surface-color-hover: rgba(255, 255, 255, 0.05);
   --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
 .light {
@@ -27,6 +28,7 @@
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(./assets/sun.svg);
 }
 
 body {
@@ -57,6 +59,7 @@ body * {
   margin: 56px auto 0px auto;
 }
 
+/* Profile */
 #profile {
   text-align: center;
   padding: 24px; /* Preenchimento */
@@ -82,6 +85,41 @@ body * {
   font-size: 16px; /* Tamanho da fonte */
   line-height: 24px; /* Altura da linha */
   margin-top: 8px;
+}
+
+/* Switch */
+#switch {
+  width: 64px;
+  position: relative;
+
+  margin: 4px auto;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+
+  /* Posicionamento */
+  position: absolute;
+  z-index: 1; /* Botão acima do track*/
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%); /* Movendo o botão */
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  border-radius: 9999px;
+
+  /* Posicionamento track */
 }
 
 /* Links */
