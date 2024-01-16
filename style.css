@@ -84,6 +84,8 @@ ul li a {
   text-decoration: none; /* Retirar linha do link */
   font-weight: 500;
 
+  transition: background 0.2s; /* Transição ao carregar a página */
+
   /* Display flex
    * justify-content: center;
    * - Faz com que os elementos da caixa ul ficam um do lado do outro.
@@ -93,4 +95,10 @@ ul li a {
   /* Display block
    * text-align: center;
    */
+}
+
+/* Pseudo-selector */
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid white;
 }
